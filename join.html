@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Study Circle: a fictional campus study club for focused learning and peer support.">
+<title>Join | Study Circle</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%23182d48'/%3E%3Ccircle%20cx='16'%20cy='16'%20r='8'%20fill='none'%20stroke='%23d9f36a'%20stroke-width='4'/%3E%3C/svg%3E">
+<script src="script.js" defer>
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<a class="brand" href="index.html">Study Circle<span class="brand-dot" aria-hidden="true">
+</span>
+</a>
+<nav aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="sessions.html">Sessions</a>
+<a href="join.html" aria-current="page">Join</a>
+</nav>
+</header>
+<main id="main">
+<header class="page-heading">
+<p class="eyebrow">Take the first step</p>
+<h1>Make time for your goals.</h1>
+<p class="lead">Tell us which session interests you.</p>
+</header>
+<div class="two-column">
+<section>
+<h2>Session interest form</h2>
+<p id="form-note">All fields are required. This classroom demo checks your entries, but does not send or store them.</p>
+<noscript>
+<p class="note">JavaScript is disabled. Your browser can check basic requirements, but enable JavaScript to use the full demonstration.</p>
+</noscript>
+<form id="join-form" action="join.html" method="get" aria-describedby="form-note">
+<div id="form-status" role="status" aria-live="polite" tabindex="-1">
+</div>
+<div class="field">
+<label for="full-name">Name</label>
+<input id="full-name" type="text" autocomplete="name" required minlength="2" maxlength="80" aria-describedby="name-error">
+<span class="error" id="name-error">
+</span>
+</div>
+<div class="field">
+<label for="email">Email address</label>
+<input id="email" type="email" autocomplete="email" required maxlength="254" aria-describedby="email-error">
+<span class="error" id="email-error">
+</span>
+</div>
+<div class="field">
+<label for="session">Preferred session</label>
+<select id="session" required aria-describedby="session-error">
+<option value="">Select a session</option>
+<option value="focus">Focus Lab</option>
+<option value="problem-solving">Problem-Solving Circle</option>
+<option value="reset">Weekly Reset</option>
+</select>
+<span class="error" id="session-error">
+</span>
+</div>
+<div class="field">
+<label for="goal">Your study goal</label>
+<p class="hint" id="goal-hint">Use 10–500 characters to describe what you want to work on.</p>
+<textarea id="goal" rows="4" required minlength="10" maxlength="500" aria-describedby="goal-hint goal-error">
+</textarea>
+<span class="error" id="goal-error">
+</span>
+</div>
+<div class="field">
+<label class="check" for="agreement">
+<input id="agreement" type="checkbox" required aria-describedby="agreement-error"> I agree to respect the club’s shared agreements.</label>
+<span class="error" id="agreement-error">
+</span>
+</div>
+<button type="submit">Check my interest form</button>
+</form>
+</section>
+<aside class="panel">
+<h2>A good goal is specific.</h2>
+<p>Try “Outline the introduction for my history essay” or “Practice five algebra problems.”</p>
+<p>Choose something you can make progress on in one session.</p>
+<a href="about.html">Read our shared agreements</a>
+</aside>
+</div>
+</main>
+<footer>
+<p>Study Circle · A fictional student club</p>
+<p>Classroom website project · 2026</p>
+</footer>
+</body>
+</html>
